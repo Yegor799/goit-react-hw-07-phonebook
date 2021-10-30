@@ -1,8 +1,14 @@
 import "./ContactList.css";
 import { connect } from "react-redux";
 import * as contactsOperations from "../../redux/contacts/contacts-operations";
+import { useEffect } from 'react';
 
-function ContactList({ names, onDelete }) {
+function ContactList({ names, onDelete, fetchContacts }) {
+
+useEffect(() => {
+    fetchContacts()    
+}, [])
+
     return (
         <ul className="ContactList">
             {names.map(contact => {
@@ -28,7 +34,8 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => ({
-    onDelete: contactID => dispatch(contactsOperations.deleteContact(contactID))
+    onDelete: contactID => dispatch(contactsOperations.deleteContact(contactID)),
+    fetchContacts: ()=> dispatch(contactsOperations.fetchContacts())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContactList);

@@ -9,7 +9,5 @@ const store = configureStore({
     middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
 });
 
-console.log(store.getState())
-
 
 export default store;
