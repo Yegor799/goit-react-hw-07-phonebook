@@ -1,0 +1,79 @@
+{
+  "contacts": [
+    {
+      "name": "Yegor Test",
+      "number": "32432423432",
+      "id": "fac0ba46-7c25-479b-bde4-1cd50ca20043"
+    },
+    {
+      "name": "fsdfsdfdsf",
+      "number": "3423423423",
+      "id": "02958ae0-852b-42d8-9598-2fc1c75b6a90"
+    },
+    {
+      "name": "Yegor Test",
+      "number": "23423423",
+      "id": "b5f5f507-6b04-449c-87ab-3702e798eb09"
+    },
+    {
+      "name": "fdsfsd",
+      "number": "4644564646",
+      "id": "b4dc5e19-4042-4e58-86b1-1f903545794a"
+    },
+    {
+      "name": "fdsfsdf",
+      "number": "43423234",
+      "id": "bea7f082-6255-4a4c-af7d-c747e60e9076"
+    },
+    {
+      "name": "gdfgfdgf",
+      "number": "4644564646",
+      "id": "ca9977ef-f997-4385-914d-c76f638faefa"
+    },
+    {
+      "name": "Yegor Test",
+      "number": "4644564646",
+      "id": "3f2e42cb-1594-4fd4-a73f-9df7590bc8db"
+    },
+    {
+      "name": "fddsfsdfsdf",
+      "number": "24324243",
+      "id": "fd4966be-58b7-49c8-aa8c-c5611951e030"
+    },
+    {
+      "name": "rwerwerwer",
+      "number": "32423424",
+      "id": "fc374acc-24b1-41ab-a0a2-a2acb75fa994"
+    },
+    {
+      "name": "Yegor Test",
+      "number": "453453",
+      "id": "c7bbf9db-8f16-4e01-a56b-18d1c4f9b1c6"
+    },
+    {
+      "name": "Test Test",
+      "number": "4644564646",
+      "id": "92791e07-1612-46dd-b7ea-f83f1f5af2c5"
+    },
+    {
+      "name": "fsdfsdfsf",
+      "number": "3424234",
+      "id": "92693954-a530-4ffe-8819-b42a0afaa1f8"
+    },
+    {
+      "name": "dfsdfadf",
+      "number": "2314241234",
+      "id": "393596ca-cd96-4699-8132-c55c227eb3b3"
+    },
+    {
+      "name": "fsdfsdfsdf",
+      "number": "4644564646",
+      "id": "45042f74-2f12-472f-80bf-89e1424360fe"
+    },
+    {
+      "name": "fsdfsdfds",
+      "number": "4644564646",
+      "id": "a01c7ede-663d-4295-8efd-ee89f4faa491"
+    }
+  ]
+}
