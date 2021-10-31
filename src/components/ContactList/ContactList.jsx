@@ -2,14 +2,17 @@ import "./ContactList.css";
 import { connect } from "react-redux";
 import * as contactsOperations from "../../redux/contacts/contacts-operations";
 import { useEffect } from 'react';
+import Loader from "react-loader-spinner";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
-function ContactList({ names, onDelete, fetchContacts }) {
+function ContactList({ names, onDelete, fetchContacts, isLoading }) {
 
 useEffect(() => {
     fetchContacts()    
 }, [])
 
     return (
+<>        
         <ul className="ContactList">
             {names.map(contact => {
                 return (
@@ -19,7 +22,16 @@ useEffect(() => {
                     </li>
                 )
             })}
-        </ul>
+            </ul>
+
+            {isLoading && <Loader
+                type="Puff"
+                color="#00BFFF"
+                height={100}
+                width={100}
+                timeout={3000} />
+            }
+</>
     )
 }
 
@@ -30,6 +42,7 @@ const mapStateToProps = state => {
 
     return {
         names: filteredNames,
+        isLoading: state.contacts.loading,
     }
 };
 

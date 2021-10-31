@@ -25,8 +25,16 @@ const filter = createReducer('', {
 });
 
 const loading = createReducer(false, {
-
-})
+    [addContactSuccess]:()=> false,
+    [addContactRequest]:()=>true,
+    [addContactError]:()=> false,
+    [deleteContactRequest]:()=>true,
+    [deleteContactError]:()=> false,
+    [deleteContactSuccess]:()=> false,
+    [fetchContactSuccess]:()=> false,
+    [fetchContactRequest]:()=>true,
+    [fetchContactError]:()=> false,
+});
 
 export default combineReducers({
     items,
