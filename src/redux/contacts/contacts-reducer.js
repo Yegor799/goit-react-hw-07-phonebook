@@ -15,7 +15,7 @@ import {
 
 
 const items = createReducer([], {
-    [fetchContactSuccess]: (_, {payload}) => payload,
+    [fetchContactSuccess]: (_, { payload }) => payload,
     [addContactSuccess]: (state, { payload }) => [...state, payload],
     [deleteContactSuccess]: (state, { payload }) => state.filter(({ id }) => id !== payload),
 });
@@ -24,9 +24,14 @@ const filter = createReducer('', {
     [filterContacts]: (_, { payload }) => payload,
 });
 
+const loading = createReducer(false, {
+
+})
+
 export default combineReducers({
     items,
     filter,
+    loading,
 });
 
 
